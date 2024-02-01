@@ -5,7 +5,7 @@
    alex_length = 3
    wupeiqi_length = 18
    total = alex_length + wupeiqi_length
-   print(total)
+   print(total)  #21
    ```
 
 2. 按要求写代码
@@ -75,3 +75,7 @@
    print(value) # 60
    ```
 '''
+nickname = "一米八大高个"
+username = "弟弟"
+text = username + nickname
+print(text)
