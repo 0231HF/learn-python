@@ -35,3 +35,16 @@
 #     print("真聪明")
 # else:
 #     print("输入错误")
+
+int_score = input("请输入你的分数:")
+score = int(int_score)
+if score >= 90:
+    print("A")
+elif score >= 80:
+    print("B")
+elif score >= 60:
+    print("C")
+elif score >= 40:
+    print("D")
+else:
+    print("E")
