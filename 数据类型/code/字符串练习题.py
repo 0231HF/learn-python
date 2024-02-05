@@ -58,7 +58,7 @@
        print(110)
    ```
 
-6. 让用户输入一段文本，请实现将文本中的敏感词 `苍老师`、`波波老师`替换为 `***`，最后并输入替换后的文本。
+6. 让用户输入一段文本，请实现将文本中的敏感词 `物理老师`、`化学老师`替换为 `***`，最后并输入替换后的文本。
 
 7. 有变量name = "aleX leNb " 完成如下操作：
 
@@ -92,6 +92,75 @@
 
 """
 
+
+
+
+name = "aleX leNb "
+print(name.strip())
+print(name.startswith("al"))
+
+print(name.endswith("Nb"))
+print(name.replace("l","p"))
+print(name.split("l"))
+print(name.split("l",1))
+print(name.upper())
+print(name.lower())
+
+
+
+print('''
+9. 有字符串s = "123a4b5c"
+
+   - 通过对s切片形成新的字符串 "123"
+   - 通过对s切片形成新的字符串 "a4b"
+   - 通过对s切片形成字符串 "c"
+   - 通过对s切片形成字符串 "ba2"
+''')
+s = "123a4b5c"
+
+print(s[0:3])
+print(s[3:6])
+print(s[-1])
+print(s[-3::-2])
+print(s[::-1])
+
+message = "伤情最是晚凉天，憔悴厮人不堪言"
+
+
+
+print("10")
+count =0
+while count < len(message):
+    print(message[count])
+    count+=1
+print('''
+11
+''')
+
+for i  in message:
+    print(i)
+
+
+print('''
+12. 使用for循环和range实现对字符串 message = "伤情最是晚凉天，憔悴厮人不堪言" 中每个字符进行倒叙输出。
+''')
+# message = "伤情最是晚凉天，憔悴厮人不堪言"
+for i in range(len(message)-1,-1, -1):
+    print(message[i])
+
+print('''
+13. 使用for循环实现输出倒计时效果，例如：输出内容依次是："倒计时3秒"，"倒计时2秒"，"倒计时1秒"。
+''')
+for i in range(3, 0, -1):
+    print(f"倒计时{i}秒")
+
+print("计算用户输入文件中浪 出现的次数")
+# context_data=input("请输入文本:")
+# print(f"这个文本中出现的浪的次数为{context_data.count('浪')}")
+#
+# print("".center(20,"-"))
+
+
 """
 15. 获取用户两次输入的内容，并提取其中的数字，然后实现数字的相加（转换为整型再相加）：
 要求：
@@ -100,6 +169,20 @@
 然后将两个数字进行相加。
 
 """
-num1 = input("请输入：") # asdfd123sf2312
-num2 = input("请输入：") # a12dfd183sf23
-# 请补充代码
+# num1 = input("请输入：") # asdfd123sf2312
+# num2 = input("请输入：") # a12dfd183sf23
+# # 请补充代码
+# num1_list =[]
+# num2_list =[]
+# for i in range(len(num1)):
+#     if num1[i].isdecimal():
+#         num1_list.append(num1[i])
+#     else:
+#         pass
+# for i in range(len(num2)):
+#     if num2[i].isdecimal():
+#         num2_list.append(num2[i])
+#     else:
+#         pass
+#
+# print(f'{int("".join(num1_list))+ int("".join(num2_list))}')
