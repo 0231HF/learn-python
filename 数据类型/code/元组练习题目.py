@@ -1,4 +1,4 @@
-print('''
+'''
 练习题1：判断是否可以实现，如果可以请写代码实现。
 
 ```python
@@ -74,4 +74,34 @@ else:
     print("登录失败")
 ```
 
-''')
+'''
+li = ["alex", [11, 22, (88, 99, 100,), 33], "WuSir", ("ritian", "barry",), "wenzhou"]
+
+# 1.请将 "WuSir" 修改成 "武沛齐"
+# 2.请将 ("ritian", "barry",) 修改为 ['日天','日地']
+
+# 3.请将 88 修改为 87
+# 4.请将 "wenzhou" 删除，然后再在列表第0个索引位置插入 "周周"
+li[2]="武沛齐"
+print(li)
+print(li.index("alex"))
+aa = li.index(("ritian", "barry",))
+# li[aa][0] =1
+li[aa]=['日天','日地']
+print(li)
+li.remove("wenzhou")
+li.insert(0,"zhoyuzhou")
+print(li)
+
+data = ("123",666,[11,22,33], ("alex","李杰",[999,666,(5,6,7)]) )
+data[2].append(44)
+print(data)
+print("练习题3：动态的创建用户并添加到用户列表中。")
+user_list = [] # 用户信息
+while True:
+    user = input("请输入用户名：")
+    if user == "Q":
+        break
+    pwd = input("请输入密码：")
+    item = (user,pwd,)
+    user_list.append(item)
